@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mhd3v.weather.DetailsActivity">
+
+    <TextView
+        android:id="@+id/sunrise"
+        android:layout_width="93dp"
+        android:layout_height="94dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="53dp"
+        android:background="@color/black1"
+        android:gravity="center"
+        android:text="Sunrise"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/humidity" />
+
+    <TextView
+        android:id="@+id/sunset"
+        android:layout_width="93dp"
+        android:layout_height="94dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="53dp"
+        android:background="@color/black1"
+        android:gravity="center"
+        android:text="Sunset"
+        android:textColor="@color/white"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/precipatation" />
+
+    <TextView
+        android:id="@+id/windspeed"
+        android:layout_width="93dp"
+        android:layout_height="94dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="138dp"
+        android:background="@color/black1"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="Wind Speed"
+        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintLeft_toRightOf="@+id/humidity"
+        app:layout_constraintRight_toLeftOf="@+id/precipatation"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/precipatation"
+        android:layout_width="93dp"
+        android:layout_height="94dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="138dp"
+        android:background="@color/black1"
+        android:gravity="center"
+        android:text="Precipatation"
+        android:textColor="@color/white"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/visibility"
+        android:layout_width="93dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="53dp"
+        android:background="@color/black1"
+        android:gravity="center"
+        android:text="Visibility"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/windspeed"
+        app:layout_constraintLeft_toRightOf="@+id/sunrise"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintRight_toLeftOf="@+id/sunset"
+        android:layout_marginRight="8dp"
+        app:layout_constraintHorizontal_bias="0.515" />
+
+    <TextView
+        android:id="@+id/humidity"
+        android:layout_width="93dp"
+        android:layout_height="94dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="138dp"
+        android:background="@color/black1"
+        android:gravity="center"
+        android:text="Humidity"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/day"
+        android:layout_width="277dp"
+        android:layout_height="66dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="Day"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
